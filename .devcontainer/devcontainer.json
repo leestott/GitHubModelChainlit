@@ -9,7 +9,7 @@
         }
     },
     "forwardPorts": [],
-    "postCreateCommand": "pip install -r requirements.txt",
+    "postCreateCommand": "pip install -r ./.devcontainer/requirements.txt",
     "settings": {
         "python.pythonPath": "/usr/local/bin/python"
     }
