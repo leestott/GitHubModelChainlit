@@ -8,29 +8,12 @@ We are using Github Models as Service to deploy the required models. The environ
 
 The following models are available in the GitHub Models service with new models expected so please check the [GitHub Marketplace Models](https://github.com/marketplace/models) for additional models:
 
-**AI21 Labs:** 
-- AI21-Jamba-Instruct
-
-**Cohere:** 
-- Cohere-command-r
-- Cohere-command-r-plus
+Demo of RAG implementation using Small Language Models under 8billion parameters
 
 **Meta:** 
-- Meta-Llama-3-70B-Instruct
 - Meta-Llama-3-8B-Instruct
-- Meta-Llama-3.1-405B-Instruct
-- Meta-Llama-3.1-70B-Instruct 
 - Meta-Llama-3.1-8B-Instruct
 
-**Mistral AI:** 
-- Mistral-large 
-- Mistral-large-2407 
-- Mistral-Nemo
-- Mistral-small
-
-**Azure OpenAI:** 
-- gpt-4o
-- gpt-4o-mini
 
 **Microsoft** 
 - Phi-3-medium-128k-instruct 
@@ -42,6 +25,13 @@ The following models are available in the GitHub Models service with new models 
 - Phi-3.5-mini-instruct
 
 ## Environment setup
+Run this in a codespaces 
+
+Install requirements 
+
+```
+pip install -r requirements.txt 
+```
 
 ### GitHub Codespaces
 
@@ -50,7 +40,6 @@ You can run this samples virtually by using GitHub Codespaces and no additional 
 1. To run chainlit demo app, run the following command in the Codespace Terminal Window:
 
 ```bash
-source .env
 chainlit run app.py -w
 ```
 A browser will open in `http://localhost:8000`.
@@ -126,7 +115,7 @@ A Router LLM is used to determine which specific LLM should handle a given reque
 Choose the setting button on the chat window and simply select the required models.
 
 **For example:** 
-- Select, Mistral-small as the router, means Mistral-Small will decides how to handle the request and directs it to the model for generation.
+- Select, Phi-3.5-mini-instruct as the router, means Phi-3.5-mini-instruct will decides how to handle the request and directs it to the model for generation.
 - Select, Phi-3-medium-128k-instruct  as the LLM Generation, means Phi-3-medium-128k-instruct will decide how to format the out to the chat window.
 
 ### Running the Demo
