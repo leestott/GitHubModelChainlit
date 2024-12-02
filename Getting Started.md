@@ -24,16 +24,6 @@ Demo of RAG implementation using Small Language Models under 8billion parameters
 - Phi-3-small-8k-instruct
 - Phi-3.5-mini-instruct
 
-## Environment setup
-Run this in a codespaces 
-
-Install requirements 
-
-```
-python3 -m pip install --upgrade pip
-pip install -r requirements.txt 
-```
-
 ### GitHub Codespaces
 
 You can run this samples virtually by using GitHub Codespaces and no additional settings or setup are required. 
